@@ -614,104 +614,104 @@ for ($x = 0; $x < 10; $x++) {
 
 The PHP string functions are part of the PHP core. No installation is required to use these functions.
 
-addcslashes() 	                Returns a string with backslashes in front of the specified characters
-addslashes() 	                Returns a string with backslashes in front of predefined characters
-bin2hex() 	                    Converts a string of ASCII characters to hexadecimal values
-chop() 	                        Removes whitespace or other characters from the right end of a string
-chr() 	                        Returns a character from a specified ASCII value
-chunk_split() 	                Splits a string into a series of smaller parts
-convert_cyr_string() 	        Converts a string from one Cyrillic character-set to another
-convert_uudecode() 	            Decodes a uuencoded string
-convert_uuencode() 	            Encodes a string using the uuencode algorithm
-count_chars() 	                Returns information about characters used in a string
-crc32() 	                    Calculates a 32-bit CRC for a string
-crypt() 	                    One-way string hashing
-echo() 	                        Outputs one or more strings
-explode() 	                    Breaks a string into an array
-fprintf() 	                    Writes a formatted string to a specified output stream
-get_html_translation_table() 	Returns the translation table used by htmlspecialchars() and htmlentities()
-hebrev() 	                    Converts Hebrew text to visual text
-hebrevc() 	                    Converts Hebrew text to visual text and new lines (\n) into <br>
-hex2bin() 	                    Converts a string of hexadecimal values to ASCII characters
-html_entity_decode() 	        Converts HTML entities to characters
-htmlentities()               	Converts characters to HTML entities
-htmlspecialchars_decode() 	    Converts some predefined HTML entities to characters
-htmlspecialchars() 	            Converts some predefined characters to HTML entities
-implode() 	                    Returns a string from the elements of an array
-join() 	                        Alias of implode()
-lcfirst() 	                    Converts the first character of a string to lowercase
-levenshtein()                  	Returns the Levenshtein distance between two strings
-localeconv() 	                Returns locale numeric and monetary formatting information
-ltrim() 	                    Removes whitespace or other characters from the left side of a string
-md5() 	                        Calculates the MD5 hash of a string
-md5_file() 	                    Calculates the MD5 hash of a file
-metaphone() 	                Calculates the metaphone key of a string
-money_format()              	Returns a string formatted as a currency string
-nl_langinfo() 	                Returns specific local information
-nl2br() 	                    Inserts HTML line breaks in front of each newline in a string
-number_format() 	            Formats a number with grouped thousands
-ord() 	                        Returns the ASCII value of the first character of a string
-parse_str() 	                Parses a query string into variables
-print() 	                    Outputs one or more strings
-printf() 	                    Outputs a formatted string
-quoted_printable_decode() 	    Converts a quoted-printable string to an 8-bit string
-quoted_printable_encode() 	    Converts an 8-bit string to a quoted printable string
-quotemeta() 	                Quotes meta characters
-rtrim() 	                    Removes whitespace or other characters from the right side of a string
-setlocale() 	                Sets locale information
-sha1() 	                        Calculates the SHA-1 hash of a string
-sha1_file() 	                Calculates the SHA-1 hash of a file
-similar_text() 	                Calculates the similarity between two strings
-soundex() 	                    Calculates the soundex key of a string
-sprintf() 	                    Writes a formatted string to a variable
-sscanf() 	                    Parses input from a string according to a format
-str_getcsv() 	                Parses a CSV string into an array
-str_ireplace()                 	Replaces some characters in a string (case-insensitive)
-str_pad() 	                    Pads a string to a new length
-str_repeat() 	                Repeats a string a specified number of times
-str_replace() 	                Replaces some characters in a string (case-sensitive)
-str_rot13() 	                Performs the ROT13 encoding on a string
-str_shuffle() 	                Randomly shuffles all characters in a string
-str_split() 	                Splits a string into an array
-str_word_count() 	            Count the number of words in a string
-strcasecmp() 	                Compares two strings (case-insensitive)
-strchr() 	                    Finds the first occurrence of a string inside another string (alias of strstr())
-strcmp() 	                    Compares two strings (case-sensitive)
-strcoll() 	                    Compares two strings (locale based string comparison)
-strcspn() 	                    Returns the number of characters found in a string before any part of some specified characters are found
-strip_tags() 	                Strips HTML and PHP tags from a string
-stripcslashes()                	Unquotes a string quoted with addcslashes()
-stripslashes()                	Unquotes a string quoted with addslashes()
-stripos() 	                    Returns the position of the first occurrence of a string inside another string (case-insensitive)
-stristr() 	                    Finds the first occurrence of a string inside another string (case-insensitive)
-strlen() 	                    Returns the length of a string
-strnatcasecmp() 	            Compares two strings using a "natural order" algorithm(thuật toán) (case-insensitive)
-strnatcmp() 	                Compares two strings using a "natural order" algorithm (case-sensitive)
-strncasecmp() 	                String comparison of the first n characters (case-insensitive)
-strncmp() 	                    String comparison of the first n characters (case-sensitive)
-strpbrk() 	                    Searches a string for any of a set of characters
-strpos() 	                    Returns the position of the first occurrence of a string inside another string (case-sensitive)
-strrchr() 	                    Finds the last occurrence of a string inside another string
-strrev() 	                    Reverses a string
-strripos() 	                    Finds the position of the last occurrence of a string inside another string (case-insensitive)
-strrpos() 	                    Finds the position of the last occurrence of a string inside another string (case-sensitive)
-strspn() 	                    Returns the number of characters found in a string that contains only characters from a specified charlist
-strstr() 	                    Finds the first occurrence of a string inside another string (case-sensitive)
-strtok() 	                    Splits a string into smaller strings
-strtolower() 	                Converts a string to lowercase letters
-strtoupper() 	                Converts a string to uppercase letters
-strtr() 	                    Translates certain characters in a string
-substr() 	                    Returns a part of a string
-substr_compare() 	            Compares two strings from a specified start position (binary safe and optionally case-sensitive)
-substr_count() 	                Counts the number of times a substring occurs in a string
-substr_replace() 	            Replaces a part of a string with another string
-trim() 	                        Removes whitespace or other characters from both sides of a string
-ucfirst() 	                    Converts the first character of a string to uppercase
-ucwords() 	                    Converts the first character of each word in a string to uppercase
-vfprintf()                  	Writes a formatted string to a specified output stream
-vprintf() 	                    Outputs a formatted string
-vsprintf() 	                    Writes a formatted string to a variable
-wordwrap() 	                    Wraps a string to a given number of characters
++ addcslashes() 	                Returns a string with backslashes in front of the specified characters
++ addslashes() 	                Returns a string with backslashes in front of predefined characters
++ bin2hex() 	                    Converts a string of ASCII characters to hexadecimal values
++ chop() 	                        Removes whitespace or other characters from the right end of a string
++ chr() 	                        Returns a character from a specified ASCII value
++ chunk_split() 	                Splits a string into a series of smaller parts
++ convert_cyr_string() 	        Converts a string from one Cyrillic character-set to another
++ convert_uudecode() 	            Decodes a uuencoded string
++ convert_uuencode() 	            Encodes a string using the uuencode algorithm
++ count_chars() 	                Returns information about characters used in a string
++ crc32() 	                    Calculates a 32-bit CRC for a string
++ crypt() 	                    One-way string hashing
++ echo() 	                        Outputs one or more strings
++ explode() 	                    Breaks a string into an array
++ fprintf() 	                    Writes a formatted string to a specified output stream
++ get_html_translation_table() 	Returns the translation table used by htmlspecialchars() and htmlentities()
++ hebrev() 	                    Converts Hebrew text to visual text
++ hebrevc() 	                    Converts Hebrew text to visual text and new lines (\n) into <br>
++ hex2bin() 	                    Converts a string of hexadecimal values to ASCII characters
++ html_entity_decode() 	        Converts HTML entities to characters
++ htmlentities()               	Converts characters to HTML entities
++ htmlspecialchars_decode() 	    Converts some predefined HTML entities to characters
++ htmlspecialchars() 	            Converts some predefined characters to HTML entities
++ implode() 	                    Returns a string from the elements of an array
++ join() 	                        Alias of implode()
++ lcfirst() 	                    Converts the first character of a string to lowercase
++ levenshtein()                  	Returns the Levenshtein distance between two strings
++ localeconv() 	                Returns locale numeric and monetary formatting information
++ ltrim() 	                    Removes whitespace or other characters from the left side of a string
++ md5() 	                        Calculates the MD5 hash of a string
++ md5_file() 	                    Calculates the MD5 hash of a file
++ metaphone() 	                Calculates the metaphone key of a string
++ money_format()              	Returns a string formatted as a currency string
++ nl_langinfo() 	                Returns specific local information
++ nl2br() 	                    Inserts HTML line breaks in front of each newline in a string
++ number_format() 	            Formats a number with grouped thousands
++ ord() 	                        Returns the ASCII value of the first character of a string
++ parse_str() 	                Parses a query string into variables
++ print() 	                    Outputs one or more strings
++ printf() 	                    Outputs a formatted string
++ quoted_printable_decode() 	    Converts a quoted-printable string to an 8-bit string
++ quoted_printable_encode() 	    Converts an 8-bit string to a quoted printable string
++ quotemeta() 	                Quotes meta characters
++ rtrim() 	                    Removes whitespace or other characters from the right side of a string
++ setlocale() 	                Sets locale information
++ sha1() 	                        Calculates the SHA-1 hash of a string
++ sha1_file() 	                Calculates the SHA-1 hash of a file
++ similar_text() 	                Calculates the similarity between two strings
++ soundex() 	                    Calculates the soundex key of a string
++ sprintf() 	                    Writes a formatted string to a variable
++ sscanf() 	                    Parses input from a string according to a format
++ str_getcsv() 	                Parses a CSV string into an array
++ str_ireplace()                 	Replaces some characters in a string (case-insensitive)
++ str_pad() 	                    Pads a string to a new length
++ str_repeat() 	                Repeats a string a specified number of times
++ str_replace() 	                Replaces some characters in a string (case-sensitive)
++ str_rot13() 	                Performs the ROT13 encoding on a string
++ str_shuffle() 	                Randomly shuffles all characters in a string
++ str_split() 	                Splits a string into an array
++ str_word_count() 	            Count the number of words in a string
++ strcasecmp() 	                Compares two strings (case-insensitive)
++ strchr() 	                    Finds the first occurrence of a string inside another string (alias of strstr())
++ strcmp() 	                    Compares two strings (case-sensitive)
++ strcoll() 	                    Compares two strings (locale based string comparison)
++ strcspn() 	                    Returns the number of characters found in a string before any part of some specified characters are found
++ strip_tags() 	                Strips HTML and PHP tags from a string
++ stripcslashes()                	Unquotes a string quoted with addcslashes()
++ stripslashes()                	Unquotes a string quoted with addslashes()
++ stripos() 	                    Returns the position of the first occurrence of a string inside another string (case-insensitive)
++ stristr() 	                    Finds the first occurrence of a string inside another string (case-insensitive)
++ strlen() 	                    Returns the length of a string
++ strnatcasecmp() 	            Compares two strings using a "natural order" algorithm(thuật toán) (case-insensitive)
++ strnatcmp() 	                Compares two strings using a "natural order" algorithm (case-sensitive)
++ strncasecmp() 	                String comparison of the first n characters (case-insensitive)
++ strncmp() 	                    String comparison of the first n characters (case-sensitive)
++ strpbrk() 	                    Searches a string for any of a set of characters
++ strpos() 	                    Returns the position of the first occurrence of a string inside another string (case-sensitive)
++ strrchr() 	                    Finds the last occurrence of a string inside another string
++ strrev() 	                    Reverses a string
++ strripos() 	                    Finds the position of the last occurrence of a string inside another string (case-insensitive)
++ strrpos() 	                    Finds the position of the last occurrence of a string inside another string (case-sensitive)
++ strspn() 	                    Returns the number of characters found in a string that contains only characters from a specified charlist
++ strstr() 	                    Finds the first occurrence of a string inside another string (case-sensitive)
++ strtok() 	                    Splits a string into smaller strings
++ strtolower() 	                Converts a string to lowercase letters
++ strtoupper() 	                Converts a string to uppercase letters
++ strtr() 	                    Translates certain characters in a string
++ substr() 	                    Returns a part of a string
++ substr_compare() 	            Compares two strings from a specified start position (binary safe and optionally case-sensitive)
++ substr_count() 	                Counts the number of times a substring occurs in a string
++ substr_replace() 	            Replaces a part of a string with another string
++ trim() 	                        Removes whitespace or other characters from both sides of a string
++ ucfirst() 	                    Converts the first character of a string to uppercase
++ ucwords() 	                    Converts the first character of each word in a string to uppercase
++ vfprintf()                  	Writes a formatted string to a specified output stream
++ vprintf() 	                    Outputs a formatted string
++ vsprintf() 	                    Writes a formatted string to a variable
++ wordwrap() 	                    Wraps a string to a given number of characters
 
 8.PHP Array Introduction
 
@@ -720,84 +720,84 @@ The array functions allow you to access and manipulate arrays.
 Simple and multi-dimensional(đa chiều) arrays are supported.
 
 Function 	                 Description
-array() 	                 Creates an array
-array_change_key_case() 	 Changes all keys in an array to lowercase or uppercase
-array_chunk() 	             Splits an array into chunks of arrays
-array_column() 	             Returns the values from a single column in the input array
-array_combine() 	         Creates an array by using the elements from one "keys" array and one "values" array
-array_count_values() 	     Counts all the values of an array
-array_diff() 	             Compare arrays, and returns the differences (compare values only)
-array_diff_assoc() 	         Compare arrays, and returns the differences (compare keys and values)
-array_diff_key() 	         Compare arrays, and returns the differences (compare keys only)
-array_diff_uassoc() 	     Compare arrays, and returns the differences (compare keys and values, using a user-defined key comparison function)
-array_diff_ukey()          	 Compare arrays, and returns the differences (compare keys only, using a user-defined key comparison function)
-array_fill() 	             Fills an array with values
-array_fill_keys() 	         Fills an array with values, specifying keys
-array_filter() 	             Filters the values of an array using a callback function
-array_flip() 	             Flips/Exchanges all keys with their associated values in an array
-array_intersect() 	         Compare arrays, and returns the matches (compare values only)
-array_intersect_assoc() 	 Compare arrays and returns the matches (compare keys and values)
-array_intersect_key() 	     Compare arrays, and returns the matches (compare keys only)
-array_intersect_uassoc() 	 Compare arrays, and returns the matches (compare keys and values, using a user-defined key comparison function)
-array_intersect_ukey() 	     Compare arrays, and returns the matches (compare keys only, using a user-defined key comparison function)
-array_key_exists() 	         Checks if the specified key exists in the array
-array_keys() 	             Returns all the keys of an array
-array_map() 	             Sends each value of an array to a user-made function, which returns new values
-array_merge() 	             Merges one or more arrays into one array
-array_merge_recursive() 	 Merges one or more arrays into one array recursively
-array_multisort()          	 Sorts multiple or multi-dimensional arrays
-array_pad() 	             Inserts a specified number of items, with a specified value, to an array
-array_pop() 	             Deletes the last element of an array
-array_product() 	         Calculates the product of the values in an array
-array_push() 	             Inserts one or more elements to the end of an array
-array_rand() 	             Returns one or more random keys from an array
-array_reduce()               Returns an array as a string, using a user-defined function
-array_replace() 	         Replaces the values of the first array with the values from following arrays
-array_replace_recursive()    Replaces the values of the first array with the values from following arrays recursively
-array_reverse() 	         Returns an array in the reverse order
-array_search() 	             Searches an array for a given value and returns the key
-array_shift() 	             Removes the first element from an array, and returns the value of the removed element
-array_slice() 	             Returns selected parts of an array
-array_splice() 	             Removes and replaces specified elements of an array
-array_sum() 	             Returns the sum of the values in an array
-array_udiff() 	             Compare arrays, and returns the differences (compare values only, using a user-defined key comparison function)
-array_udiff_assoc() 	     Compare arrays, and returns the differences (compare keys and values, using a built-in function to compare the keys and a user-defined function to compare the values)
-array_udiff_uassoc() 	     Compare arrays, and returns the differences (compare keys and values, using two user-defined key comparison functions)
-array_uintersect() 	         Compare arrays, and returns the matches (compare values only, using a user-defined key comparison function)
-array_uintersect_assoc() 	 Compare arrays, and returns the matches (compare keys and values, using a built-in function to compare the keys and a user-defined function to compare the values)
-array_uintersect_uassoc() 	 Compare arrays, and returns the matches (compare keys and values, using two user-defined key comparison functions)
-array_unique()         	     Removes duplicate values from an array
-array_unshift() 	         Adds one or more elements to the beginning of an array
-array_values() 	             Returns all the values of an array
-array_walk() 	             Applies a user function to every member of an array
-array_walk_recursive() 	     Applies a user function recursively to every member of an array
-arsort() 	                 Sort an associative array in descending order, according to the value
-asort() 	                 Sort an associative array in ascending order, according to the value
-compact() 	                 Create array containing variables and their values
-count() 	                 Returns the number of elements in an array
-current() 	                 Returns the current element in an array
-each() 	                     Deprecated from PHP 7.2. Returns the current key and value pair from an array
-end() 	                     Sets the internal pointer of an array to its last element
-extract() 	                 Imports variables into the current symbol table from an array
-in_array() 	                 Checks if a specified value exists in an array
-key() 	                     Fetches a key from an array
-krsort() 	                 Sort an associative array in descending order, according to the key
-ksort() 	                 Sort an associative array in ascending order, according to the key
-list()         	             Assigns variables as if they were an array
-natcasesort() 	             Sort an array using a case insensitive "natural order" algorithm
-natsort() 	                 Sort an array using a "natural order" algorithm
-next() 	                     Advance the internal array pointer of an array
-pos() 	                     Alias of current()
-prev()                	     Rewinds the internal array pointer
-range() 	                 Creates an array containing a range of elements
-reset() 	                 Sets the internal pointer of an array to its first element
-rsort() 	                 Sort an indexed array in descending order
-shuffle() 	                 Shuffles an array
-sizeof() 	                 Alias of count()
-sort() 	                     Sort an indexed array in ascending order
-uasort() 	                 Sort an array by values using a user-defined comparison function
-uksort() 	                 Sort an array by keys using a user-defined comparison function
-usort() 	                 Sort an array using a user-defined comparison function
++ array() 	                 Creates an array
++ array_change_key_case() 	 Changes all keys in an array to lowercase or uppercase
++ array_chunk() 	             Splits an array into chunks of arrays
++ array_column() 	             Returns the values from a single column in the input array
++ array_combine() 	         Creates an array by using the elements from one "keys" array and one "values" array
++ array_count_values() 	     Counts all the values of an array
++ array_diff() 	             Compare arrays, and returns the differences (compare values only)
++ array_diff_assoc() 	         Compare arrays, and returns the differences (compare keys and values)
++ array_diff_key() 	         Compare arrays, and returns the differences (compare keys only)
++ array_diff_uassoc() 	     Compare arrays, and returns the differences (compare keys and values, using a user-defined key comparison function)
++ array_diff_ukey()          	 Compare arrays, and returns the differences (compare keys only, using a user-defined key comparison function)
++ array_fill() 	             Fills an array with values
++ array_fill_keys() 	         Fills an array with values, specifying keys
++ array_filter() 	             Filters the values of an array using a callback function
++ array_flip() 	             Flips/Exchanges all keys with their associated values in an array
++ array_intersect() 	         Compare arrays, and returns the matches (compare values only)
++ array_intersect_assoc() 	 Compare arrays and returns the matches (compare keys and values)
++ array_intersect_key() 	     Compare arrays, and returns the matches (compare keys only)
++ array_intersect_uassoc() 	 Compare arrays, and returns the matches (compare keys and values, using a user-defined key comparison function)
++ array_intersect_ukey() 	     Compare arrays, and returns the matches (compare keys only, using a user-defined key comparison function)
++ array_key_exists() 	         Checks if the specified key exists in the array
++ array_keys() 	             Returns all the keys of an array
++ array_map() 	             Sends each value of an array to a user-made function, which returns new values
++ array_merge() 	             Merges one or more arrays into one array
++ array_merge_recursive() 	 Merges one or more arrays into one array recursively
++ array_multisort()          	 Sorts multiple or multi-dimensional arrays
++ array_pad() 	             Inserts a specified number of items, with a specified value, to an array
++ array_pop() 	             Deletes the last element of an array
++ array_product() 	         Calculates the product of the values in an array
++ array_push() 	             Inserts one or more elements to the end of an array
++ array_rand() 	             Returns one or more random keys from an array
++ array_reduce()               Returns an array as a string, using a user-defined function
++ array_replace() 	         Replaces the values of the first array with the values from following arrays
++ array_replace_recursive()    Replaces the values of the first array with the values from following arrays recursively
++ array_reverse() 	         Returns an array in the reverse order
++ array_search() 	             Searches an array for a given value and returns the key
++ array_shift() 	             Removes the first element from an array, and returns the value of the removed element
++ array_slice() 	             Returns selected parts of an array
++ array_splice() 	             Removes and replaces specified elements of an array
++ array_sum() 	             Returns the sum of the values in an array
++ array_udiff() 	             Compare arrays, and returns the differences (compare values only, using a user-defined key comparison function)
++ array_udiff_assoc() 	     Compare arrays, and returns the differences (compare keys and values, using a built-in function to compare the keys and a user-defined function to compare the values)
++ array_udiff_uassoc() 	     Compare arrays, and returns the differences (compare keys and values, using two user-defined key comparison functions)
++ array_uintersect() 	         Compare arrays, and returns the matches (compare values only, using a user-defined key comparison function)
++ array_uintersect_assoc() 	 Compare arrays, and returns the matches (compare keys and values, using a built-in function to compare the keys and a user-defined function to compare the values)
++ array_uintersect_uassoc() 	 Compare arrays, and returns the matches (compare keys and values, using two user-defined key comparison functions)
++ array_unique()         	     Removes duplicate values from an array
++ array_unshift() 	         Adds one or more elements to the beginning of an array
++ array_values() 	             Returns all the values of an array
++ array_walk() 	             Applies a user function to every member of an array
++ array_walk_recursive() 	     Applies a user function recursively to every member of an array
++ arsort() 	                 Sort an associative array in descending order, according to the value
++ asort() 	                 Sort an associative array in ascending order, according to the value
++ compact() 	                 Create array containing variables and their values
++ count() 	                 Returns the number of elements in an array
++ current() 	                 Returns the current element in an array
++ each() 	                     Deprecated from PHP 7.2. Returns the current key and value pair from an array
++ end() 	                     Sets the internal pointer of an array to its last element
++ extract() 	                 Imports variables into the current symbol table from an array
++ in_array() 	                 Checks if a specified value exists in an array
++ key() 	                     Fetches a key from an array
++ krsort() 	                 Sort an associative array in descending order, according to the key
++ ksort() 	                 Sort an associative array in ascending order, according to the key
++ list()         	             Assigns variables as if they were an array
++ natcasesort() 	             Sort an array using a case insensitive "natural order" algorithm
++ natsort() 	                 Sort an array using a "natural order" algorithm
++ next() 	                     Advance the internal array pointer of an array
++ pos() 	                     Alias of current()
++ prev()                	     Rewinds the internal array pointer
++ range() 	                 Creates an array containing a range of elements
++ reset() 	                 Sets the internal pointer of an array to its first element
++ rsort() 	                 Sort an indexed array in descending order
++ shuffle() 	                 Shuffles an array
++ sizeof() 	                 Alias of count()
++ sort() 	                     Sort an indexed array in ascending order
++ uasort() 	                 Sort an array by values using a user-defined comparison function
++ uksort() 	                 Sort an array by keys using a user-defined comparison function
++ usort() 	                 Sort an array using a user-defined comparison function
 
 8.File handling 
 File handling : is an important part of any web application. You often need to open and process a file for different tasks.
@@ -807,16 +807,17 @@ File handling : is an important part of any web application. You often need to o
 The readfile() function reads a file and writes it to the output buffer.
 
 Assume we have a text file called "webdictionary.txt", stored on the server, that looks like this:
-AJAX = Asynchronous JavaScript and XML
-CSS = Cascading Style Sheets
-HTML = Hyper Text Markup Language
-PHP = PHP Hypertext Preprocessor
-SQL = Structured Query Language
-SVG = Scalable Vector Graphics
-XML = EXtensible Markup Language
++ AJAX = Asynchronous JavaScript and XML
++ CSS = Cascading Style Sheets
++ HTML = Hyper Text Markup Language
++ PHP = PHP Hypertext Preprocessor
++ SQL = Structured Query Language
++ SVG = Scalable Vector Graphics
++ XML = EXtensible Markup Language
 
 The PHP code to read the file and write it to the output buffer is as follows (the readfile() function returns the number of bytes read on success):
 Example:
+
 <?php
 echo readfile("webdictionary.txt");
 ?> 
@@ -839,14 +840,14 @@ fclose($myfile);
 The file may be opened in one of the following modes:
 
 
-r 	Open a file for read only. File pointer starts at the beginning of the file
-w 	Open a file for write only. Erases the contents of the file or creates a new file if it doesn't exist. File pointer starts at the beginning of the file
-a 	Open a file for write only. The existing data in file is preserved. File pointer starts at the end of the file. Creates a new file if the file doesn't exist
-x 	Creates a new file for write only. Returns FALSE and an error if file already exists
-r+ 	Open a file for read/write. File pointer starts at the beginning of the file
-w+ 	Open a file for read/write. Erases the contents of the file or creates a new file if it doesn't exist. File pointer starts at the beginning of the file
-a+ 	Open a file for read/write. The existing data in file is preserved. File pointer starts at the end of the file. Creates a new file if the file doesn't exist
-x+ 	Creates a new file for read/write. Returns FALSE and an error if file already exists
++ r 	Open a file for read only. File pointer starts at the beginning of the file
++ w 	Open a file for write only. Erases the contents of the file or creates a new file if it doesn't exist. File pointer starts at the beginning of the file
++ a 	Open a file for write only. The existing data in file is preserved. File pointer starts at the end of the file. Creates a new file if the file doesn't exist
++ x 	Creates a new file for write only. Returns FALSE and an error if file already exists
++ r+ 	Open a file for read/write. File pointer starts at the beginning of the file
++ w+ 	Open a file for read/write. Erases the contents of the file or creates a new file if it doesn't exist. File pointer starts at the beginning of the file
++ a+ 	Open a file for read/write. The existing data in file is preserved. File pointer starts at the end of the file. Creates a new file if the file doesn't exist
++ x+ 	Creates a new file for read/write. Returns FALSE and an error if file already exists
 
 8.3 PHP Read File - fread()
 
@@ -857,7 +858,7 @@ The first parameter of fread() contains the name of the file to read from and th
 The following PHP code reads the "webdictionary.txt" file to the end:
 
 
-fread($myfile,filesize("webdictionary.txt"));
++ fread($myfile,filesize("webdictionary.txt"));
 
 8.3 PHP Close File - fclose()
 
@@ -866,11 +867,11 @@ The fclose() function is used to close an open file.
 It's a good programming practice to close all files after you have finished with them. You don't want an open file running around on your server taking up resources!
 
 The fclose() requires the name of the file (or a variable that holds the filename) we want to close:
-<?php
-$myfile = fopen("webdictionary.txt", "r");
-// some code to be executed....
-fclose($myfile);
-?>
+  <?php
+  $myfile = fopen("webdictionary.txt", "r");
+  // some code to be executed....
+  fclose($myfile);
+  ?>
 
 8.4 PHP Read Single Line - fgets()
 
@@ -878,11 +879,11 @@ The fgets() function is used to read a single line from a file.
 
 The example below outputs the first line of the "webdictionary.txt" file:
 Example:
-<?php
-$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
-echo fgets($myfile);
-fclose($myfile);
-?>
+  <?php
+  $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+  echo fgets($myfile);
+  fclose($myfile);
+  ?>
 
 Note: After a call to the fgets() function, the file pointer has moved to the next line.
 
@@ -896,13 +897,13 @@ The feof() function is useful for looping through data of unknown length.
 The example below reads the "webdictionary.txt" file line by line, until end-of-file is reached:
 Example:
 
-<?php
-$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
-// Output one line until end-of-file
-while(!feof($myfile)) {
-  echo fgets($myfile) . "<br>";
-}
-fclose($myfile);
+  <?php
+  $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+  // Output one line until end-of-file
+  while(!feof($myfile)) {
+    echo fgets($myfile) . "<br>";
+  }
+  fclose($myfile);
 ?>
 8.6 PHP Read Single Character - fgetc()
 
@@ -911,14 +912,14 @@ The fgetc() function is used to read a single character from a file.
 The example below reads the "webdictionary.txt" file character by character, until end-of-file is reached:
 Example:
 
-<?php
-$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
-// Output one character until end-of-file
-while(!feof($myfile)) {
-  echo fgetc($myfile);
-}
-fclose($myfile);
-?> 
+  <?php
+  $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+  // Output one character until end-of-file
+  while(!feof($myfile)) {
+    echo fgetc($myfile);
+  }
+  fclose($myfile);
+  ?> 
 
 
 
@@ -933,7 +934,7 @@ If you use fopen() on a file that does not exist, it will create it, given that 
 
 The example below creates a new file called "testfile.txt". The file will be created in the same directory where the PHP code resides:
 Example
-$myfile = fopen("testfile.txt", "w")
+  $myfile = fopen("testfile.txt", "w")
 
 8.7.1 PHP File Permissions
 
@@ -946,14 +947,14 @@ The first parameter of fwrite() contains the name of the file to write to and th
 
 The example below writes a couple of names into a new file called "newfile.txt":
 Example
-<?php
-$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-$txt = "John Doe\n";
-fwrite($myfile, $txt);
-$txt = "Jane Doe\n";
-fwrite($myfile, $txt);
-fclose($myfile);
-?>
+  <?php
+  $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+  $txt = "John Doe\n";
+  fwrite($myfile, $txt);
+  $txt = "Jane Doe\n";
+  fwrite($myfile, $txt);
+  fclose($myfile);
+  ?>
 
 Notice that we wrote to the file "newfile.txt" twice. Each time we wrote to the file we sent the string $txt that first contained "John Doe" and second contained "Jane Doe". After we finished writing, we closed the file using the fclose() function.
 
@@ -966,14 +967,14 @@ Now that "newfile.txt" contains some data we can show what happens when we open 
 
 In the example below we open our existing file "newfile.txt", and write some new data into it:
 Example
-<?php
-$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-$txt = "Mickey Mouse\n";
-fwrite($myfile, $txt);
-$txt = "Minnie Mouse\n";
-fwrite($myfile, $txt);
-fclose($myfile);
-?>
+  <?php
+  $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+  $txt = "Mickey Mouse\n";
+  fwrite($myfile, $txt);
+  $txt = "Minnie Mouse\n";
+  fwrite($myfile, $txt);
+  fclose($myfile);
+  ?>
 
 If we now open the "newfile.txt" file, both John and Jane have vanished, and only the data we just wrote is present:
 Mickey Mouse
@@ -984,14 +985,14 @@ You can append data to a file by using the "a" mode. The "a" mode appends text t
 
 In the example below we open our existing file "newfile.txt", and append some text to it:
 Example:
-<?php
-$myfile = fopen("newfile.txt", "a") or die("Unable to open file!");
-$txt = "Donald Duck\n";
-fwrite($myfile, $txt);
-$txt = "Goofy Goof\n";
-fwrite($myfile, $txt);
-fclose($myfile);
-?>
+  <?php
+  $myfile = fopen("newfile.txt", "a") or die("Unable to open file!");
+  $txt = "Donald Duck\n";
+  fwrite($myfile, $txt);
+  $txt = "Goofy Goof\n";
+  fwrite($myfile, $txt);
+  fclose($myfile);
+  ?>
 
 If we now open the "newfile.txt" file, we will see that Donald Duck and Goofy Goof is appended to the end of the file:
 Mickey Mouse
@@ -1044,23 +1045,23 @@ The form above sends data to a file called "upload.php", which we will create ne
 Create The Upload File PHP Script
 
 The "upload.php" file contains the code for uploading a file:
-<?php
-$target_dir = "uploads/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-// Check if image file is a actual image or fake image
-if(isset($_POST["submit"])) {
-  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-  if($check !== false) {
-    echo "File is an image - " . $check["mime"] . ".";
-    $uploadOk = 1;
-  } else {
-    echo "File is not an image.";
-    $uploadOk = 0;
+  <?php
+  $target_dir = "uploads/";
+  $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+  $uploadOk = 1;
+  $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+  // Check if image file is a actual image or fake image
+  if(isset($_POST["submit"])) {
+    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    if($check !== false) {
+      echo "File is an image - " . $check["mime"] . ".";
+      $uploadOk = 1;
+    } else {
+      echo "File is not an image.";
+      $uploadOk = 0;
+    }
   }
-}
-?>
+  ?>
 
 PHP script explained:
 
@@ -1077,78 +1078,78 @@ Now we can add some restrictions.
 
 First, we will check if the file already exists in the "uploads" folder. If it does, an error message is displayed, and $uploadOk is set to 0:
 // Check if file already exists
-if (file_exists($target_file)) {
-  echo "Sorry, file already exists.";
-  $uploadOk = 0;
-}
+  if (file_exists($target_file)) {
+    echo "Sorry, file already exists.";
+    $uploadOk = 0;
+  }
 Limit File Size
 
 The file input field in our HTML form above is named "fileToUpload".
 
 Now, we want to check the size of the file. If the file is larger than 500KB, an error message is displayed, and $uploadOk is set to 0:
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
-  echo "Sorry, your file is too large.";
-  $uploadOk = 0;
-}
+  if ($_FILES["fileToUpload"]["size"] > 500000) {
+    echo "Sorry, your file is too large.";
+    $uploadOk = 0;
+  }
 Limit File Type
 
 The code below only allows users to upload JPG, JPEG, PNG, and GIF files. All other file types gives an error message before setting $uploadOk to 0:
 // Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-&& $imageFileType != "gif" ) {
-  echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-  $uploadOk = 0;
-}
-Complete Upload File PHP Script
-
-The complete "upload.php" file now looks like this:
-<?php
-$target_dir = "uploads/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-
-// Check if image file is a actual image or fake image
-if(isset($_POST["submit"])) {
-  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-  if($check !== false) {
-    echo "File is an image - " . $check["mime"] . ".";
-    $uploadOk = 1;
-  } else {
-    echo "File is not an image.";
+  if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+  && $imageFileType != "gif" ) {
+    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
     $uploadOk = 0;
   }
-}
+  Complete Upload File PHP Script
+
+The complete "upload.php" file now looks like this:
+  <?php
+  $target_dir = "uploads/";
+  $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+  $uploadOk = 1;
+  $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
+// Check if image file is a actual image or fake image
+  if(isset($_POST["submit"])) {
+    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    if($check !== false) {
+      echo "File is an image - " . $check["mime"] . ".";
+      $uploadOk = 1;
+    } else {
+      echo "File is not an image.";
+      $uploadOk = 0;
+    }
+  }
 
 // Check if file already exists
-if (file_exists($target_file)) {
-  echo "Sorry, file already exists.";
-  $uploadOk = 0;
-}
+  if (file_exists($target_file)) {
+    echo "Sorry, file already exists.";
+    $uploadOk = 0;
+  }
 
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
-  echo "Sorry, your file is too large.";
-  $uploadOk = 0;
-}
+  if ($_FILES["fileToUpload"]["size"] > 500000) {
+    echo "Sorry, your file is too large.";
+    $uploadOk = 0;
+  }
 
 // Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-&& $imageFileType != "gif" ) {
-  echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-  $uploadOk = 0;
-}
+  if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+  && $imageFileType != "gif" ) {
+    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+    $uploadOk = 0;
+  }
 
 // Check if $uploadOk is set to 0 by an error
-if ($uploadOk == 0) {
-  echo "Sorry, your file was not uploaded.";
-// if everything is ok, try to upload file
-} else {
-  if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-    echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
+  if ($uploadOk == 0) {
+    echo "Sorry, your file was not uploaded.";
+  // if everything is ok, try to upload file
   } else {
-    echo "Sorry, there was an error uploading your file.";
+    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+      echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
+    } else {
+      echo "Sorry, there was an error uploading your file.";
+    }
   }
-}
-?>
+  ?>
