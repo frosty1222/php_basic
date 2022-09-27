@@ -3,8 +3,8 @@
 ## Keyword 
 ### introduction to web technology
 ```Ngôn ngữ PHP là từ viết tắt của Personal Home Page (hiện nay là Hypertext Preprocessor). Thuật ngữ này chỉ chuỗi ngôn ngữ kịch bản hay mã lệnh, phù hợp để phát triển cho các ứng dụng nằm trên máy chủ.
-
-Khi viết phần mềm bằng ngôn ngữ PHP, chuỗi lệnh sẽ được xử lý trên server để từ đó sinh ra mã HTML trên client.```
+Khi viết phần mềm bằng ngôn ngữ PHP, chuỗi lệnh sẽ được xử lý trên server để từ đó sinh ra mã HTML trên client.
+```
 ### script mode 
 + để chạy file php  trong terminal ta phải set up tải ngĩn và php-fpm trước 
 --> sau khi đã tải xong thì tạo một folder php-basic 
