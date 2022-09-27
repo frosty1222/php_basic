@@ -2,9 +2,9 @@
 ### github link: https://github.com/frosty1222/php_basic
 ## Keyword 
 ### introduction to web technology
-**Ngôn ngữ PHP là từ viết tắt của Personal Home Page (hiện nay là Hypertext Preprocessor). Thuật ngữ này chỉ chuỗi ngôn ngữ kịch bản hay mã lệnh, phù hợp để phát triển cho các ứng dụng nằm trên máy chủ.
+```Ngôn ngữ PHP là từ viết tắt của Personal Home Page (hiện nay là Hypertext Preprocessor). Thuật ngữ này chỉ chuỗi ngôn ngữ kịch bản hay mã lệnh, phù hợp để phát triển cho các ứng dụng nằm trên máy chủ.
 
-Khi viết phần mềm bằng ngôn ngữ PHP, chuỗi lệnh sẽ được xử lý trên server để từ đó sinh ra mã HTML trên client. **
+Khi viết phần mềm bằng ngôn ngữ PHP, chuỗi lệnh sẽ được xử lý trên server để từ đó sinh ra mã HTML trên client.```
 ### script mode 
 + để chạy file php  trong terminal ta phải set up tải ngĩn và php-fpm trước 
 --> sau khi đã tải xong thì tạo một folder php-basic 
@@ -158,6 +158,7 @@ $arr = [1,2,3,4,5,6,7];
 
 ### ví dụ về một số  string function hay sử dụng 
 ```
++echo():hàm này để hiển thị một biến chuỗi chứa nhiều chuỗi kí tự hoặc 1 kí tự
 +str_getcsv(): phân tích một chuỗi csv thành một mảng
 +str_ireplace(): thay đổi một số kí tự trong chuỗi
 +str_pad(): Đưa một chuỗi lên một độ dài mới
@@ -169,7 +170,7 @@ $arr = [1,2,3,4,5,6,7];
 +strcasecmp(): so sánh 2 chuỗi 
 +strchr(): Tìm lần xuất hiện đầu tiên của một chuỗi bên trong một chuỗi khác 
 +strcmp(): so sánh 2 chuỗĩ
-+strcoll(): o sánh chuỗi dựa trên ngôn ngữ
++strcoll(): so sánh chuỗi dựa trên ngôn ngữ
 ```
 1. hàm echo 
 ==> hàm echo không hẳn là một hàm nó không thể truyền vào tham số mà chỉ để dùng để in chuỗi 
@@ -190,13 +191,104 @@ echo $a // output 'hello world';
 echo str_replace("world","Peter","Hello world!");
 ?>
 ```
+3.str_getcsv()
+```
+<?php
 
+$string = 'PHP,Java,Python,Kotlin,Swift';
+$data = str_getcsv($string);
+
+var_dump($data);
+?>
+```
+4.str_ireplace()
+```
+<?php
+echo str_ireplace("WORLD","Peter","Hello good world!");
+// kết qủa là: hello good peter
+?>
+```
+5.str_pad()
+```
+<?php
+$str = "Hello World";
+echo str_pad($str,20,".");
+// kết quả là: Hello World.........
+?>
+```
+6.str_repeat()
+```
+<?php
+echo str_repeat("Wow",13);
+?> 
+// kết quả:WowWowWowWowWowWowWowWowWowWowWowWowWow
+```
+7.str_shuffle()
+```
+<?php
+echo str_shuffle("Hello World");
+?>
+// kết quả:oldlre loWH
+```
+8.str_split()
+```
+<?php
+print_r(str_split("Hello"));
+?>
+// kết quả:Array ( [0] => H [1] => e [2] => l [3] => l [4] => o )
+```
+9.str_word_count()
+```
+<?php
+echo str_word_count("Hello world!");
+?>
+// kết quả: 2
+```
+10.strcasecmp()
+```
+<?php
+echo strcasecmp("Hello world!","HELLO WORLD!");
+?>
+// kết quả:0
+// nếu hiển thị kết quả là o thì có nghĩa là 2 cái chuỗi trên bằng nhau
+```
+
+11.strchr()
+```
+<?php
+echo strchr("Hello world!","world");
+?>
+// kết quả:world!
+```
+12.strcmp()
+```
+<?php
+echo strcmp("Hello world!","Hello world!");
+?>
+// kết quả:0
+// nếu kết quả là 0 thì 2 chuỗi trên bằng nhau
+
+```
+13.strcoll()
+```
+setlocale (LC_COLLATE, 'NL');
+echo strcoll("Hello World!","Hello World!");
+echo "<br>";
+
+setlocale (LC_COLLATE, 'en_US');
+echo strcoll("Hello World!","Hello World!");
+?>
+// kết quả: 0
+// nếu kết quả là 0 thì 2 chuỗi trên bằng nhau
+```
 ### Array Functions 
 ==>Array functions :tạo và trả về một mảng. Nó cho phép bạn tạo các mảng được lập chỉ mục, liên kết và đa chiều.
 ### một sồ php array function 
 1.hàm count trong php
 ```
 + array(): tạo một mảng
++ count():hàm này để đếm một array
++ sort(): hàm này để đếm 
 + array_change_key_case(): thay đổi kí tự trong mảng thành lowercase(viết thường) hoặc uppercase(hoa)
 + array_chunk(): Tách một mảng thành nhiều mảng
 + array_column(): trả về một giá trị từ một cột dữ liệu đầu vào 
@@ -209,10 +301,10 @@ echo str_replace("world","Peter","Hello world!");
 + array_diff_ukey(): So sánh các mảng và trả về sự khác biệt (chỉ so sánh các khóa, sử dụng chức năng so sánh khóa do người dùng xác định)
 + array_fill():lấp đầy một mảng với giá trị tương ứng 
 + array_fill_keys():Điền vào một mảng với các giá trị, chỉ định các khóa
-```
-==> hàm này dùng để đếm một array trong php 
-```
-<?php    
++hàm array_search():hàm này sẽ trả về giá trị được tìm kiếm nếu tìm kiếm được trong mảng
+1,count
+
+<?php 
 $season=array("summer","winter","spring","autumn");    
 echo count($season);    
 ?>
@@ -230,11 +322,175 @@ foreach( $season as $s )
 ?> 
 ```
 3.hàm array_search()
-==> hàm naydf sẽ trả về giá trị được tìm kiếm nếu tìm kiếm được trong mảng
+==> hàm này sẽ trả về giá trị được tìm kiếm nếu tìm kiếm được trong mảng
 ```
 <?php    
 $season=array("summer","winter","spring","autumn");    
 $key=array_search("spring",$season);  
 echo $key; // echo  spring   
 ?> 
+```
+4.array_change_key_case():
+```
+<?php
+$age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
+print_r(array_change_key_case($age,CASE_UPPER));
+?>
+// kết quả:Array ( [PETER] => 35 [BEN] => 37 [JOE] => 43 )
+```
+5.array_chunk()
+```
+<?php
+$cars=array("Volvo","BMW","Toyota","Honda","Mercedes","Opel");
+print_r(array_chunk($cars,2));
+?>
+// kết quả:Array ( [0] => Array ( [0] => Volvo [1] => BMW ) [1] => Array ( [0] => Toyota [1] => Honda ) [2] => Array ( [0] => Mercedes [1] => Opel ) )
+```
+6.array_column()
+```
+<?php
+// An array that represents a possible record set returned from a database
+$a = array(
+  array(
+    'id' => 5698,
+    'first_name' => 'Peter',
+    'last_name' => 'Griffin',
+  ),
+  array(
+    'id' => 4767,
+    'first_name' => 'Ben',
+    'last_name' => 'Smith',
+  ),
+  array(
+    'id' => 3809,
+    'first_name' => 'Joe',
+    'last_name' => 'Doe',
+  )
+);
+
+$last_names = array_column($a, 'last_name');
+print_r($last_names);
+?>
+// kết quả: 
+Array
+(
+  [0] => Griffin
+  [1] => Smith
+  [2] => Doe
+)
+```
+
+7.array_combine()
+```
+<?php
+$fname=array("Peter","Ben","Joe");
+$age=array("35","37","43");
+
+$c=array_combine($fname,$age);
+print_r($c);
+?>
+// kết quả:Array ( [Peter] => 35 [Ben] => 37 [Joe] => 43 )
+
+```
+8.array_count_values()
+```
+<?php
+$a=array("A","Cat","Dog","A","Dog");
+print_r(array_count_values($a));
+?>
+// kết quả:Array ( [A] => 2 [Cat] => 1 [Dog] => 2 )
+```
+
+9.array_diff()
+```
+<?php
+$a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+$a2=array("e"=>"red","f"=>"green","g"=>"blue");
+
+$result=array_diff($a1,$a2);
+print_r($result);
+?>
+// kết quả: Array ( [d] => yellow )
+```
+10.array_diff_assoc()
+```
+<?php
+$a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+$a2=array("a"=>"red","b"=>"green","c"=>"blue");
+
+$result=array_diff_assoc($a1,$a2);
+print_r($result);
+?>
+// kết quả: Array ( [d] => yellow )
+```
+11.array_diff_key()
+```
+<?php
+$a1=array("a"=>"red","b"=>"green","c"=>"blue");
+$a2=array("a"=>"red","c"=>"blue","d"=>"pink");
+
+$result=array_diff_key($a1,$a2);
+print_r($result);
+?>
+// kết quả:Array ( [b] => green )
+```
+12.array_diff_uassoc()
+```
+<?php
+function myfunction($a,$b)
+{
+if ($a===$b)
+  {
+  return 0;
+  }
+  return ($a>$b)?1:-1;
+}
+
+$a1=array("a"=>"red","b"=>"green","c"=>"blue");
+$a2=array("d"=>"red","b"=>"green","e"=>"blue");
+
+$result=array_diff_uassoc($a1,$a2,"myfunction");
+print_r($result);
+?>
+// kết quả:Array ( [a] => red [c] => blue )
+```
+13.array_diff_ukey()
+```
+<?php
+function myfunction($a,$b)
+{
+if ($a===$b)
+  {
+  return 0;
+  }
+  return ($a>$b)?1:-1;
+}
+
+$a1=array("a"=>"red","b"=>"green","c"=>"blue");
+$a2=array("a"=>"blue","b"=>"black","e"=>"blue");
+
+$result=array_diff_ukey($a1,$a2,"myfunction");
+print_r($result);
+?>
+// kết quả:Array ( [c] => blue )
+```
+14.array_fill()
+```
+<?php
+$a1=array_fill(3,4,"blue");
+print_r($a1);
+?>
+//kết quả:
+Array ( [3] => blue [4] => blue [5] => blue [6] => blue )
+
+Array ( [0] => red )
+```
+15.array_fill_keys()
+```
+<?php
+$keys=array("a","b","c","d");
+$a1=array_fill_keys($keys,"blue");
+print_r($a1);
+?>
+// kết quả:Array ( [a] => blue [b] => blue [c] => blue [d] => blue )
 ```
