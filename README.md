@@ -132,8 +132,9 @@ $c = $a**$b
     - foreach 
   
 vd:
-```
+
  1, if else
+```
 <?php
 $a = 1;
 $b = 2; 
@@ -141,6 +142,7 @@ if($a > $b){
   echo $a;
 }else{
   echo $b;
+}
 ?>
 ```
 2. for
